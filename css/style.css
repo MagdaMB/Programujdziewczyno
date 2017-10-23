@@ -276,6 +276,7 @@ nav {
 
 .slider {
   list-style: none;
+  display: none;
 }
 
 .dot {
@@ -316,4 +317,8 @@ footer p {
   width: 20%;
   margin-left: 40%;
   margin-right: 40%;
+}
+
+.visible {
+  display: inline-block;
 }

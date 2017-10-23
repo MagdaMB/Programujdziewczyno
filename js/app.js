@@ -62,6 +62,30 @@
 			window.scroll(0,0);
 		})
 
+
+/*zadanie 5*/
+
+		var items = document.querySelectorAll(".org");
+		var dots = document.querySelectorAll(".dot");
+
+		console.log(items);
+		console.log(dots);
+
+		dots[0].addEventListener('click', function() {
+			for(var i=0; i<=dots.length-1; i++) {
+				dots[i].classList.remove('active');
+				items[i].classList.remove('visible');
+			}
+
+			this.classList.add('active');
+			items[0].classList.add('visible');
+
+			this.classList.add('active');
+			items[1].classList.add('visible');
+
+			this.classList.add('active');
+			items[2].classList.add('visible');
+		})
     });
 
 
