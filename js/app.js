@@ -52,7 +52,16 @@
 			navbar.style.borderBottom = '1px solid #7f7f7f';
 		}) 	 
 
-      	
+
+/*zadanie 4*/
+
+		var buttonComeBack = document.querySelector(".come-back");
+		console.log(buttonComeBack);
+
+		buttonComeBack.addEventListener('click', function() {
+			window.scroll(0,0);
+		})
+
     });
 
 

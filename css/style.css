@@ -311,3 +311,9 @@ footer p {
 .more {
   display: none;
 }
+
+.come-back {
+  width: 20%;
+  margin-left: 40%;
+  margin-right: 40%;
+}
