@@ -321,3 +321,12 @@ footer p {
 .slider .visible {
   display: inline-block;
 }
+
+.slider {
+  list-style: none;
+}
+
+.slider li {  
+  display: none;  
+}
+

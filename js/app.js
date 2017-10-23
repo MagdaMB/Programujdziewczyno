@@ -67,14 +67,14 @@
 
 		var items = document.querySelectorAll(".org");
 		var dots = document.querySelectorAll(".dot");
-		var dot1 = document.querySelector("#dot1");
-		var dot2 = document.querySelector("#dot2");
-		var dot3 = document.querySelector("#dot3");
+		var dot1 = document.getElementById("dot1");
+		var dot2 = document.getElementById("dot2");
+		var dot3 = document.getElementById("dot3");
 
 		console.log(items);
 		console.log(dots);
 
-		dots[0].addEventListener('click', function() {
+		dot1.addEventListener('click', function() {
 			for(var i=0; i<=dots.length-1; i++) {
 				dots[i].classList.remove('active');
 				items[i].classList.remove('visible');
@@ -85,7 +85,7 @@
 		
 		})
 
-		dots[1].addEventListener('click', function() {
+		dot2.addEventListener('click', function() {
 			for(var i=0; i<=dots.length-1; i++) {
 				dots[i].classList.remove('active');
 				items[i].classList.remove('visible');
@@ -97,7 +97,7 @@
 		})
 
 
-		dots[2].addEventListener('click', function() {
+		dot3.addEventListener('click', function() {
 			for(var i=0; i<=dots.length-1; i++) {
 				dots[i].classList.remove('active');
 				items[i].classList.remove('visible');
