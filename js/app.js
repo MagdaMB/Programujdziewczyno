@@ -67,6 +67,9 @@
 
 		var items = document.querySelectorAll(".org");
 		var dots = document.querySelectorAll(".dot");
+		var dot1 = document.querySelector("#dot1");
+		var dot2 = document.querySelector("#dot2");
+		var dot3 = document.querySelector("#dot3");
 
 		console.log(items);
 		console.log(dots);
@@ -79,13 +82,32 @@
 
 			this.classList.add('active');
 			items[0].classList.add('visible');
+		
+		})
+
+		dots[1].addEventListener('click', function() {
+			for(var i=0; i<=dots.length-1; i++) {
+				dots[i].classList.remove('active');
+				items[i].classList.remove('visible');
+			}
 
 			this.classList.add('active');
 			items[1].classList.add('visible');
+		
+		})
+
+
+		dots[2].addEventListener('click', function() {
+			for(var i=0; i<=dots.length-1; i++) {
+				dots[i].classList.remove('active');
+				items[i].classList.remove('visible');
+			}
 
 			this.classList.add('active');
 			items[2].classList.add('visible');
+		
 		})
+
     });
 
 
