@@ -1,7 +1,7 @@
 
 
 'use strict';
-
+	/*zadanie 1*/
     document.addEventListener('DOMContentLoaded', function() {
       var forDropdown = document.querySelector(".for-dropdown");
       var dropdownMenu = document.querySelector(".dropdown");
@@ -18,6 +18,7 @@
       	dropdownMenu.style.display = 'none';
       });
 
+/*zadanie 2*/
       var buttons = document.querySelectorAll(".read-more");
       console.log(buttons);
       console.log(buttons[0].previousElementSibling);
@@ -42,7 +43,14 @@
       		buttons[i].addEventListener('click', showHide);
 		}
 
-      	 
+/*zadanie 3*/
+
+		var navbar = document.querySelector(".navbar");
+		console.log(navbar);
+
+		window.addEventListener('scroll', function() {
+			navbar.style.borderBottom = '1px solid #7f7f7f';
+		}) 	 
 
       	
     });

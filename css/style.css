@@ -16,6 +16,10 @@ nav {
   font-weight: 600;
 }
 
+.navbar {
+  border-bottom: 1px solid white;
+}
+
 .navbar-brand {
   color: #ea6c56;
   text-decoration: none;
